@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=
+  , initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>DOM</title>
+</head>
+<body>
+  <h1 id='list-item'>DOM and Query Selectors</h1>
+  <p class='text'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis ut est quisquam quis rem nostrum temporibus repudiandae possimus. Pariatur ducimus molestias assumenda ea laboriosam aliquam porro possimus debitis dolorum officiis!</p>
+  <p class='dyn-text'></p>
+  <p id='example'> 2Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, dolorum expedita officiis aperiam dignissimos ullam voluptatem veritatis iste aliquam eaque commodi perspiciatis accusantium dolore ex consequatur magnam! Consectetur, repellendus incidunt?</p>
+  <ol>
+    <li class='list-item' id='property-nodes'>1</li>;
+    <li class='list-item'>2</li>;
+    <li class='list-item'>3</li>;
+    <li class='list-item'>4</li>;
+   
+  </ol>;
+  <div id='add-to-me'></div>
+  <h1>Query Selector</h1>
+  <article>
+    <p id="Intro">
+      Query Selectors use CSS selectors to select an element on a page
+    </p>
+    <ul>
+      <li class="list-item">
+        Query Selectors return an object that represents an HTML element from
+        the page
+      </li>
+      <li class="list-item">
+        If the element does not exists it will return null.
+        <span id="highlight">This could break your code.</span>
+      </li>
+      <li class="list-item">
+        If you think it might return null you can use optional chaining or an
+        if statement to stop it breaking.
+      </li>
+    </ul>
+  </article>
+  <h2>Where might I use a query selector?</h2>
+  <p id="dynamic-text"></p>
+  <h2>Similarities between arrays and node lists</h2>
+  <ul>
+    <li>Both have a length property</li>
+    <li>You can use the forEach method to iterate through node lists</li>
+    <li>You can use square brackets to access a specific node</li>
+  </ul>
+  <h3>A Dynamic List</h3>
+  <ul id="dynamic-list">
+    <li class="dynamic-list-item">List item</li>
+    <li class="dynamic-list-item">List item</li>
+    <li class="dynamic-list-item">List item</li>
+  </ul>
+  <button>click</button>
+  <h2> Inner HTML amd class list</h2>
+  <div id='dyn-content'>
+  
+  </div>
+
+  <script src='app.js'></script>
+</body>
+</html>
